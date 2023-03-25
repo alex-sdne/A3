@@ -1,0 +1,29 @@
+button{
+    margin: 20px;
+    background-color: white;
+    border: 2px solid steelblue;
+    color: steelblue;
+    font-family: calibri;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+button:active {
+    background-color: steelblue;
+    color: white;
+}
+
+#b4 {
+    margin: 20px;
+    background-color: white;
+    border: 2px solid crimson;
+    color: crimson;
+    font-family: calibri;
+    font-size: 20px;
+    border-radius: 20px;  
+}
+
+#b4:active {
+    background-color: crimson;
+    color: white;
+}
