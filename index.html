@@ -18,7 +18,7 @@
         
         <header>
 	    
-	    <h1 id="heading1">Alex Kalicharan | Assignment 3! gotta edit this</h1>
+	    <h1 id="heading1">Alex Kalicharan | Assignment 3</h1>
 	    
 	</header>
 	
@@ -30,24 +30,158 @@
 	    <a href=A4Content/index.html target ="_self">Assignment 4</a>
 	</nav>
 	
-	<form action="content/Meal.php">
+	<form action="content/display.php">
 	    
-	    <fieldset id="theDrink">
+	    <fieldset id="custinfo">
 		
 		<legend>
-		    Choose a Drink Size:
+		    Customer Information
 		</legend>
-		
-		<input type="radio" name="drink" value="large">Large
-		<br>
-		
-		<input type="radio" name="drink" value="medium">Medium
-		<br>
-		
-		<input type="radio" name="drink" value="small">Small
-		<br>
-		
+                
+                <table>
+                    
+                    <tr>
+                        
+                        <td>
+                        First Name:
+                        </td>
+                        
+                        <td>
+                       <input type="text" name="fname" placeholder="Alex" required>
+                        </td>
+                        
+                    </tr>
+                    
+                     <tr>
+                        
+                        <td>
+                        Last Name:
+                        </td>
+                        
+                        <td>
+                       <input type="text" name="lname" placeholder="Kalicharan" required>
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        
+                        <td>
+                        Email:
+                        </td>
+                        
+                        <td>
+                       <input type="email" name="email" placeholder="kalichaa@sheridancollege.ca" required>
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <img src="images/logo.jpg" alt="logo" width="200">
+                        </td>
+                    </tr>
+
+                </table>
+
 	    </fieldset>
+            
+            <fieldset id="products">
+		
+		<legend>
+		    Products for Purchase
+		</legend>
+                
+                <table>
+                    
+                    <tr>
+                        
+                        <td>
+                            <input type="checkbox" name="product[]" value="air">Air
+                        </td>
+                        
+                        <td>
+                            Air from the purest of purest sources.
+                        </td>
+                        
+                    </tr>
+                    
+                     <tr>
+                        
+                        <td>
+                            <input type="checkbox" name="product[]" value="water">Water
+                        </td>
+                        
+                        <td>
+                            Water from the purest of purest sources.
+                        </td>
+                        
+                    </tr>
+
+                    <tr>
+                        
+                        <td>
+                            <input type="checkbox" name="product[]" value="earth">Earth
+                        </td>
+                        
+                        <td>
+                            Earth from the purest of purest sources.
+                        </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        
+                        <td>
+                            <input type="checkbox" name="product[]" value="fire">Fire
+                        </td>
+                        
+                        <td>
+                            Fire from the purest of purest sources.
+                        </td>
+                        
+                    </tr>
+
+                </table>
+
+	    </fieldset>
+            
+            <fieldset id="payment">
+                
+                <legend>
+                    Payment Method
+                </legend>
+                
+                <input type="radio" name="pmethod" value="credit">Credit Card
+		<br>
+		
+		<input type="radio" name="pmethod" value="debit">Debit Card
+		<br>
+		
+		<input type="radio" name="pmethod" value="paypal">PayPal
+		<br>
+                
+            </fieldset>
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 	    
 	    <fieldset id="theMeal">
 		
