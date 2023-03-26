@@ -1,0 +1,106 @@
+header{
+    text-align: center;
+    color: grey;
+    font-family:sans-serif;
+    font-size: 1.5vw;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    color: grey;
+    font-family:sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 1px 2px black; 
+    margin-bottom: 1em;
+}
+
+a:link {
+    color: dimgrey;
+}
+
+a:visited{
+    color: dimgrey;
+}
+
+a:hover{
+    color: cadetblue;
+}
+
+main{
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas: "h1"
+			 "t1"
+			 "h2"
+			 "b2"
+			 "b1"
+			 "f1";
+    text-align: center;
+}
+
+#title{
+    grid-area: h1;
+    color: grey;
+    font-family:sans-serif;
+    font-size: 2vw;
+    text-shadow: 1px 1px 2px black; 
+}
+
+table{
+    grid-area: t1;
+    font-family:sans-serif;
+    margin: auto;
+    text-align: left;
+    
+}
+
+#h2{
+    grid-area: h2;
+    font-family:sans-serif;
+    font-size: 1.5em;
+    margin-top: 1vw;
+}
+
+#b1{
+    grid-area: b1;
+    background-color: white;
+    border: 2px solid steelblue;
+    color: steelblue;
+    font-family: calibri;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#b1:active {
+    background-color: steelblue;
+    color: white;
+}
+
+#b2 {
+    grid-area: b2;
+    background-color: white;
+    border: 2px solid crimson;
+    color: crimson;
+    font-family: calibri;
+    font-size: 20px;
+    border-radius: 20px;  
+    margin: auto auto 10px auto;
+
+}
+
+#b2:active {
+    background-color: crimson;
+    color: white;
+}
+
+footer{
+    grid-area: f1;
+    text-align: center;
+    font-family:sans-serif;
+    font-size: 1em;
+    margin-top: 10vh;
+}
