@@ -86,7 +86,7 @@
 
 	    </fieldset>
             
-            <fieldset id="products" required>
+            <fieldset id="products">
 		
 		<legend>
 		    Products for Purchase
@@ -152,7 +152,7 @@
                     Payment Method
                 </legend>
                 
-                <input type="radio" name="pmethod" value="credit">Credit Card
+                <input type="radio" name="pmethod" value="credit" required>Credit Card
 		<br>
 		
 		<input type="radio" name="pmethod" value="debit">Debit Card
@@ -170,7 +170,8 @@
                 </legend>
                 
                 <label for="shiplist">Choose a shipping method:</label>
-                <input list="options" name="shiplist">
+                
+                <input list="options" name="shiplist" required>
 
                 <datalist id="options">
                     <option value="Air">
