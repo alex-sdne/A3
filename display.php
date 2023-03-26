@@ -79,9 +79,14 @@
 		    </td>
 		    <td>
 		        <?php
-			    $check = $_GET['product'];
-			    for($x = 0; $x < count($check); $x++) {
-				echo "<p>".$check[$x]."</p>";
+			    if (@$_GET['product'] == null) {
+				echo "No product selected.";
+			    }
+			    else {
+				$check = $_GET['product'];
+				for($x = 0; $x < count($check); $x++) {
+				    echo "<p>".$check[$x]."</p>";
+				}
 			    }
 			?>
 		    </td>
