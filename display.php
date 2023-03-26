@@ -24,9 +24,9 @@
 	<nav>
 	    <a href=../index.html target ="_self">Assignment 1</a>
 	    
-	    <a href=A3Content/index.html target ="_self">Assignment 2</a>
+	    <a href=../A2Content/index.html target ="_self">Assignment 2</a>
 	    
-	    <a href=A4Content/index.html target ="_self">Assignment 4</a>
+	    <a href=../A4Content/index.html target ="_self">Assignment 4</a>
 	</nav>
 	
 	<main>
