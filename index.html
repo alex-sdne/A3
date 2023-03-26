@@ -86,7 +86,7 @@
 
 	    </fieldset>
             
-            <fieldset id="products">
+            <fieldset id="products" required>
 		
 		<legend>
 		    Products for Purchase
@@ -162,46 +162,38 @@
 		<br>
                 
             </fieldset>
+            
+            <fieldset id="shipmethod">
                 
+                <legend>
+                    Shipping Method
+                </legend>
+                
+                <label for="shiplist">Choose a shipping method:</label>
+                <input list="options" name="shiplist">
+
+                <datalist id="options">
+                    <option value="Air">
+                    <option value="Truck">
+                    <option value="Mail">
+                </datalist>
+                
+            </fieldset>
+
+            <table>
+                
+                <tr>
+                    <td>
+                        <input type="submit">
+                    </td>
+                    
+                    <td>
+                        <input type="reset">
+                    </td>
+                </tr>
             
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-	    
-	    <fieldset id="theMeal">
-		
-		<legend>
-		    Choose a Meal:
-		</legend>
-		
-		<input type="checkbox" name="meal[]" value="fries">Fries
-		<br>
-		
-		<input type="checkbox" name="meal[]" value="salad">Salad
-		<br>
-		
-		<input type="checkbox" name="meal[]" value="soup">Soup
-		<br>
-		
-		<input type="submit">
-		
-	    </fieldset> 
-	    
+            </table>
+        
 	</form>
 	
     </body>
