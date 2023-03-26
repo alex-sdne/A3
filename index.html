@@ -38,7 +38,7 @@
 		
 	    <p id="title">Order Form</p>
 	    
-	    <form action="content/display.php">
+	    <form id="form1" action="content/display.php">
 
 		<fieldset id="custinfo">
 
@@ -103,7 +103,8 @@
 			    </td>
 
 			    <td>
-				Air from the purest of purest sources.
+				<p>A mixture of 78% nitrogen and 22% oxygen. 
+				    <br>Perfect for breathing.</p>
 			    </td>
 
 			</tr>
@@ -115,19 +116,8 @@
 			    </td>
 
 			    <td>
-				Water from the purest of purest sources.
-			    </td>
-
-			</tr>
-
-			<tr>
-
-			    <td>
-				<input type="checkbox" name="product[]" value="earth">Earth
-			    </td>
-
-			    <td>
-				Earth from the purest of purest sources.
+				<p>Pure spring water with added calcium, <br>magnesium, 
+				    and potassium. Perfect for drinking.</p>
 			    </td>
 
 			</tr>
@@ -139,7 +129,9 @@
 			    </td>
 
 			    <td>
-				Fire from the purest of purest sources.
+				<p>Emits a flame with a color temperature of 2700K. 
+				    <br>Requires air to keep flame lit, 
+				    we recommend <br>purchasing air along with fire.</p>
 			    </td>
 
 			</tr>
@@ -154,13 +146,13 @@
 			Payment Method
 		    </legend>
 
-		    <input type="radio" name="pmethod" value="credit" required>Credit Card
+		    <input class="cb" type="radio" name="pmethod" value="credit" required>Credit Card
 		    <br>
 
-		    <input type="radio" name="pmethod" value="debit">Debit Card
+		    <input class="cb" type="radio" name="pmethod" value="debit">Debit Card
 		    <br>
 
-		    <input type="radio" name="pmethod" value="paypal">PayPal
+		    <input class="cb" type="radio" name="pmethod" value="paypal">PayPal
 		    <br>
 
 		</fieldset>
@@ -171,7 +163,9 @@
 			Shipping Method
 		    </legend>
 
-		    <label for="shiplist">Choose a shipping method:</label>
+		    <label for="shiplist">Choose shipping method:</label>
+		    
+		    <br>
 
 		    <input list="options" name="shiplist" required>
 
@@ -187,11 +181,11 @@
 
 		    <tr>
 			<td>
-			    <input type="submit">
+			    <input id="b1" type="submit">
 			</td>
 
 			<td>
-			    <input type="reset">
+			    <input id="b2" type="reset">
 			</td>
 		    </tr>
 
@@ -200,6 +194,11 @@
 	    </form>
 	    
 	</main>
+	
+	<footer>
+	    <p>Alex Kalicharan | Sheridan College 
+		| 1430 Trafalgar Rd, Oakville, ON L6H 2L1</p>
+	</footer>
 	
     </body>
     
