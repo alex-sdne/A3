@@ -30,172 +30,176 @@
 	    <a href=A4Content/index.html target ="_self">Assignment 4</a>
 	</nav>
 	
-	<form action="content/display.php">
+	<main>
 	    
-	    <fieldset id="custinfo">
+	    <div id="image1">
+	        <img src="images/logo.jpg" id="logo" alt="logo">
+	    </div>
 		
-		<legend>
-		    Customer Information
-		</legend>
-                
-                <table>
-                    
-                    <tr>
-                        
-                        <td>
-                        First Name:
-                        </td>
-                        
-                        <td>
-                       <input type="text" name="fname" placeholder="Alex" required>
-                        </td>
-                        
-                    </tr>
-                    
-                     <tr>
-                        
-                        <td>
-                        Last Name:
-                        </td>
-                        
-                        <td>
-                       <input type="text" name="lname" placeholder="Kalicharan" required>
-                        </td>
-                        
-                    </tr>
+	    <p id="title">Order Form</p>
+	    
+	    <form action="content/display.php">
 
-                    <tr>
-                        
-                        <td>
-                        Email:
-                        </td>
-                        
-                        <td>
-                       <input type="email" name="email" placeholder="kalichaa@sheridancollege.ca" required>
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        <td>
-                            <img src="images/logo.jpg" alt="logo" width="200">
-                        </td>
-                    </tr>
+		<fieldset id="custinfo">
 
-                </table>
+		    <legend>
+			Customer Information
+		    </legend>
 
-	    </fieldset>
-            
-            <fieldset id="products">
-		
-		<legend>
-		    Products for Purchase
-		</legend>
-                
-                <table>
-                    
-                    <tr>
-                        
-                        <td>
-                            <input type="checkbox" name="product[]" value="air">Air
-                        </td>
-                        
-                        <td>
-                            Air from the purest of purest sources.
-                        </td>
-                        
-                    </tr>
-                    
-                     <tr>
-                        
-                        <td>
-                            <input type="checkbox" name="product[]" value="water">Water
-                        </td>
-                        
-                        <td>
-                            Water from the purest of purest sources.
-                        </td>
-                        
-                    </tr>
+		    <table>
 
-                    <tr>
-                        
-                        <td>
-                            <input type="checkbox" name="product[]" value="earth">Earth
-                        </td>
-                        
-                        <td>
-                            Earth from the purest of purest sources.
-                        </td>
-                        
-                    </tr>
-                    
-                    <tr>
-                        
-                        <td>
-                            <input type="checkbox" name="product[]" value="fire">Fire
-                        </td>
-                        
-                        <td>
-                            Fire from the purest of purest sources.
-                        </td>
-                        
-                    </tr>
+			<tr>
 
-                </table>
+			    <td>
+			    First Name:
+			    </td>
 
-	    </fieldset>
-            
-            <fieldset id="payment">
-                
-                <legend>
-                    Payment Method
-                </legend>
-                
-                <input type="radio" name="pmethod" value="credit" required>Credit Card
-		<br>
-		
-		<input type="radio" name="pmethod" value="debit">Debit Card
-		<br>
-		
-		<input type="radio" name="pmethod" value="paypal">PayPal
-		<br>
-                
-            </fieldset>
-            
-            <fieldset id="shipmethod">
-                
-                <legend>
-                    Shipping Method
-                </legend>
-                
-                <label for="shiplist">Choose a shipping method:</label>
-                
-                <input list="options" name="shiplist" required>
+			    <td>
+			   <input type="text" name="fname" placeholder="Alex" required>
+			    </td>
 
-                <datalist id="options">
-                    <option value="Air">
-                    <option value="Truck">
-                    <option value="Mail">
-                </datalist>
-                
-            </fieldset>
+			</tr>
 
-            <table>
-                
-                <tr>
-                    <td>
-                        <input type="submit">
-                    </td>
-                    
-                    <td>
-                        <input type="reset">
-                    </td>
-                </tr>
-            
-            </table>
-        
-	</form>
+			 <tr>
+
+			    <td>
+			    Last Name:
+			    </td>
+
+			    <td>
+			   <input type="text" name="lname" placeholder="Kalicharan" required>
+			    </td>
+
+			</tr>
+
+			<tr>
+
+			    <td>
+			    Email:
+			    </td>
+
+			    <td>
+			   <input type="email" name="email" placeholder="kalichaa@sheridancollege.ca" required>
+			    </td>
+
+			</tr>
+
+		    </table>
+
+		</fieldset>
+
+		<fieldset id="products">
+
+		    <legend>
+			Products for Purchase
+		    </legend>
+
+		    <table>
+
+			<tr>
+
+			    <td>
+				<input type="checkbox" name="product[]" value="air">Air
+			    </td>
+
+			    <td>
+				Air from the purest of purest sources.
+			    </td>
+
+			</tr>
+
+			 <tr>
+
+			    <td>
+				<input type="checkbox" name="product[]" value="water">Water
+			    </td>
+
+			    <td>
+				Water from the purest of purest sources.
+			    </td>
+
+			</tr>
+
+			<tr>
+
+			    <td>
+				<input type="checkbox" name="product[]" value="earth">Earth
+			    </td>
+
+			    <td>
+				Earth from the purest of purest sources.
+			    </td>
+
+			</tr>
+
+			<tr>
+
+			    <td>
+				<input type="checkbox" name="product[]" value="fire">Fire
+			    </td>
+
+			    <td>
+				Fire from the purest of purest sources.
+			    </td>
+
+			</tr>
+
+		    </table>
+
+		</fieldset>
+
+		<fieldset id="payment">
+
+		    <legend>
+			Payment Method
+		    </legend>
+
+		    <input type="radio" name="pmethod" value="credit" required>Credit Card
+		    <br>
+
+		    <input type="radio" name="pmethod" value="debit">Debit Card
+		    <br>
+
+		    <input type="radio" name="pmethod" value="paypal">PayPal
+		    <br>
+
+		</fieldset>
+
+		<fieldset id="shipmethod">
+
+		    <legend>
+			Shipping Method
+		    </legend>
+
+		    <label for="shiplist">Choose a shipping method:</label>
+
+		    <input list="options" name="shiplist" required>
+
+		    <datalist id="options">
+			<option value="Air">
+			<option value="Truck">
+			<option value="Mail">
+		    </datalist>
+
+		</fieldset>
+
+		<table>
+
+		    <tr>
+			<td>
+			    <input type="submit">
+			</td>
+
+			<td>
+			    <input type="reset">
+			</td>
+		    </tr>
+
+		</table>
+
+	    </form>
+	    
+	</main>
 	
     </body>
     
